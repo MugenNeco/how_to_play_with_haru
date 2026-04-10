@@ -1,5 +1,3 @@
-// JavaScriptファイル (script.js)
-
 // オーディオコンテキストを作成
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
