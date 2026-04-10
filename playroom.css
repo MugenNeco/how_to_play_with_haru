@@ -1,0 +1,60 @@
+#haru_up_box{
+    position: absolute;
+    top: 20vh;
+    left: 0px;
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0px;
+}
+#haru_up{
+    user-select: none;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0px;
+}
+.squash {
+    animation: squash 0.4s 0s ease-in forwards;
+}
+@keyframes squash {
+    5% {
+        transform: scaleY(0.5);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+#haru_down_box{
+    position: absolute;
+    top: 47vh;
+    left: 0px;
+    width: 100%;
+    height: 23.83%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0px;
+}
+#haru_down{
+    user-select: none;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    font-size: 0px;
+}
+.turn {
+    animation: turn 0.4s 0s ease-in forwards;
+}
+@keyframes turn {
+    25% {
+        transform: rotate(-90deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
