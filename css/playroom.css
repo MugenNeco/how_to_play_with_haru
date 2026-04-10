@@ -10,6 +10,7 @@
     font-size: 0px;
 }
 #haru_up{
+    -webkit-user-drag: none;
     user-select: none;
     height: 100%;
     margin: auto;
@@ -40,6 +41,7 @@
     font-size: 0px;
 }
 #haru_down{
+    -webkit-user-drag: none;
     user-select: none;
     height: 100%;
     margin: auto;
