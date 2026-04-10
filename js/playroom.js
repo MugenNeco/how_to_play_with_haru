@@ -39,25 +39,33 @@ let playingUp = false;
 let playingDown = false;
 
 haru_up.addEventListener('click', () => {
-    if(!playingUp){
+    if(true){
         playingUp = true
+        clearTimeout(window.timerHaruUp)
+        haru_up.classList.remove('squash');
+        window.setTimeout(() => {
         playWebAudioSound(soundBuffers.puff);
         haru_up.classList.add('squash');
-        window.setTimeout(() => {
+        window.timerHaruUp = setTimeout(() => {
             haru_up.classList.remove('squash');
             playingUp = false
         }, 400)
+        }, 1)
     }
 });
 
 haru_down.addEventListener('click', () => {
-    if(!playingDown){
+    if(true){
         playingDown = true
-        playWebAudioSound(soundBuffers.door_closing1);
-        haru_down.classList.add('turn');
+        clearTimeout(window.timerHaruDown)
+        haru_down.classList.remove('turn');
         window.setTimeout(() => {
-            haru_down.classList.remove('turn');
-            playingDown = false
-        }, 400)
+            playWebAudioSound(soundBuffers.door_closing1);
+            haru_down.classList.add('turn');
+            window.timerHaruDown = setTimeout(() => {
+                haru_down.classList.remove('turn');
+                playingDown = false
+            }, 400)
+        }, 1)
     }
 });
