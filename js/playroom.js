@@ -36,7 +36,14 @@ const haru_down = document.getElementById('haru_down');
 let playingUp = false;
 let playingDown = false;
 
-haru_up.addEventListener('click', () => {
+haru_up.addEventListener('click', haru_up_class);
+document.addEventListener('keydown', function(ev){
+    if( ev.key == "f" ){
+        haru_up_class()
+    }
+});
+
+function haru_up_class(){
     if(true){
         playingUp = true
         clearTimeout(window.timerHaruUp)
@@ -50,9 +57,16 @@ haru_up.addEventListener('click', () => {
         }, 400)
         }, 1)
     }
+};
+
+haru_down.addEventListener('click', haru_down_class);
+document.addEventListener('keydown', function(ev){
+    if( ev.key == "." ){
+        haru_down_class()
+    }
 });
 
-haru_down.addEventListener('click', () => {
+function haru_down_class(){
     if(true){
         playingDown = true
         clearTimeout(window.timerHaruDown)
@@ -66,4 +80,4 @@ haru_down.addEventListener('click', () => {
             }, 400)
         }, 1)
     }
-});
+};
