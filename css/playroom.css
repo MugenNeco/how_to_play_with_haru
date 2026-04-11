@@ -1,5 +1,7 @@
 html {
     touch-action: manipulation;
+    -webkit-user-drag: none;
+    user-select: none;
 }
 #haru_up_box{
     position: absolute;
