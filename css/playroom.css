@@ -1,3 +1,6 @@
+html {
+    touch-action: manipulation;
+}
 #haru_up_box{
     position: absolute;
     top: 20vh;
