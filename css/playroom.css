@@ -1,6 +1,5 @@
 html {
     touch-action: none;
-    pointer-events: none;
 }
 #haru_up_box{
     position: absolute;
